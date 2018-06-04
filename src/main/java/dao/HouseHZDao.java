@@ -121,7 +121,7 @@ public class HouseHZDao implements Cloneable {
      */
     public void addHouseInfo(HouseHZEntity houseHZEntity) {
         try {
-            String sql = "INSERT INTO `test3househz` (`HouseName`, `Address`, `price`) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO `test2househz` (`HouseName`, `Address`, `price`) VALUES (?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, houseHZEntity.getHouseName());
             ps.setString(2, houseHZEntity.getAddress());
